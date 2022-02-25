@@ -43,10 +43,14 @@ const cardsDispaly = cards =>{
   <div class="card-body">
     <h5 class="card-title">${card.suit}</h5>
     <p class="card-text">${card.code}</p>
-    <button href="#" class="btn btn-primary">See Details</button>
+    <button onclick = "cardDetails()" class="btn btn-primary">See Details</button>
   </div>
 </div>
         `
         main.appendChild(div)
     }
+}
+
+const cardDetails = () =>{
+    console.log('hbkjnkj')
 }
