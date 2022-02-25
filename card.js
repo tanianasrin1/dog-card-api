@@ -16,7 +16,14 @@ const searchButton = () =>{
 
     // work the API
     else{
-      fetch('https://deckofcardsapi.com/api/deck/new/draw/?count=10')
-      .then()
+      fetch(`https://deckofcardsapi.com/api/deck/new/draw/?count= ${inputValue}`)
+      .then(res => res.json())
+      .then(data => cardsDispaly(data))
+      input.value = ''
     }
+
+}
+
+const cardsDispaly = cards =>{
+    console.log(cards)
 }
